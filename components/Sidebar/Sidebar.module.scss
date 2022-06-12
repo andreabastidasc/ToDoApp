@@ -1,0 +1,33 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    max-width: 100px;
+    padding: 2rem 1rem;
+    overflow: hidden;
+    width: 100%;
+    transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 7px 7px 23px -7px rgba(0,0,0,0.36); 
+    box-shadow: 7px 7px 23px -7px rgba(0,0,0,0.36);
+    &ProfilePicture {
+        max-width: 70px;
+        border-radius: 50%;
+    }
+    &Nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    &Toggle {
+        background: none;
+        border: none;
+        transition: all 300ms ease-in-out;
+        img {
+            transition: all 300ms ease-in-out;
+        }
+    }
+    &Buttons {
+        justify-self: flex-end;
+    }
+}
