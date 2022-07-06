@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
   return (
     <div className={styles.wrapper}>
       <Sidebar user={session?.user} />
-      <main>{children}</main>
+      <main className={styles.content}>{children}</main>
     </div>
   )
 }
